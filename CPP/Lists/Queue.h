@@ -5,10 +5,11 @@
 class Queue
 {
 
-public:
+private:
     Node *head;
     Node *tail;
 
+public:
     Queue();
     Queue(int value);
 

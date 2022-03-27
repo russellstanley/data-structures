@@ -11,7 +11,9 @@ LinkedList::LinkedList()
 void LinkedList::append(int value)
 {
     Node *node = new Node(value);
-    if (head == nullptr)
+
+    // Check null conditon.
+    if (isEmpty())
     {
         head = node;
     }
@@ -31,7 +33,9 @@ void LinkedList::append(int value)
 void LinkedList::display()
 {
     Node *current = head;
-    if (head == nullptr)
+
+    // Check null conditon.
+    if (isEmpty())
     {
         std::cout << "List is empty" << std::endl;
         return;
@@ -52,7 +56,8 @@ void LinkedList::remove(int index)
     Node *current = head;
     int counter = 1;
 
-    if (head == nullptr)
+    // Check null conditon.
+    if (isEmpty())
     {
         std::cout << "List is empty, cannot remove" << std::endl;
         return;
@@ -79,7 +84,8 @@ void LinkedList::remove(int index)
 // Reverse the linked list
 void LinkedList::reverse()
 {
-    if (head == nullptr)
+    // Check null conditon.
+    if (isEmpty())
     {
         std::cout << "List is empty, cannot reverse" << std::endl;
         return;
@@ -98,6 +104,7 @@ void LinkedList::reverse()
         current = following;
         following = following->next;
     }
+
     current->next = previous;
     following->next = current;
     head = following;

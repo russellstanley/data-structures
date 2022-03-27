@@ -6,12 +6,13 @@ Stack::Stack()
     top = nullptr;
 }
 
-// Create a stack with value
+// Create a stack with value.
 Stack::Stack(int value)
 {
     top = new Node(value);
 }
 
+// Push a new value onto the stack.
 void Stack::push(int value)
 {
     Node *node = new Node(value);
@@ -27,6 +28,7 @@ void Stack::push(int value)
     return;
 }
 
+// Pop will remove a value from the stack and return its value.
 int Stack::pop()
 {
     int out = top->value;
@@ -35,6 +37,7 @@ int Stack::pop()
     return out;
 }
 
+// Peek will return the value at the top of the stack.
 int Stack::peek()
 {
     if (isEmpty())

@@ -4,10 +4,11 @@
 
 class LinkedList
 {
+private:
+    Node *head;
+
 public:
     LinkedList();
-
-    Node *head;
 
     void append(int value);
     void remove(int index);
