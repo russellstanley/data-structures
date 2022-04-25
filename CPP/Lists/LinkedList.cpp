@@ -112,11 +112,7 @@ void LinkedList::reverse()
 
 bool LinkedList::isEmpty()
 {
-    if (head == nullptr)
-    {
-        return true;
-    }
-    return false;
+    return head == nullptr;
 }
 
 LinkedList::~LinkedList()
