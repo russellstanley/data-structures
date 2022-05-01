@@ -3,7 +3,7 @@ AUTHOR:
   Russell Stanley <russell.tumby@gmail.com>
 
 DESCRIPTION:
-  Hashtable implementation
+  Hashtable implementation.
 */
 
 #include "Hashtable.h"

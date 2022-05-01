@@ -1,3 +1,11 @@
+/*
+AUTHOR:
+  Russell Stanley <russell.tumby@gmail.com>
+
+DESCRIPTION:
+  Node implementation for hashtable.
+*/
+
 #include "Node.h"
 
 Node::Node()

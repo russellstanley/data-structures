@@ -3,7 +3,7 @@ AUTHOR:
   Russell Stanley <russell.tumby@gmail.com>
 
 DESCRIPTION:
-  Hashtable header file
+  Hashtable header file.
 */
 
 #pragma once
@@ -15,15 +15,15 @@ const int CAPACITY = 300;
 class Hashtable
 {
 private:
-    std::list<Node> table[CAPACITY];
+  std::list<Node> table[CAPACITY];
 
 public:
-    Hashtable();
+  Hashtable();
 
-    int hash(std::string key);
-    bool put(std::string key, int value);
-    int get(std::string key);
-    bool remove(std::string key);
+  int hash(std::string key);
+  bool put(std::string key, int value);
+  int get(std::string key);
+  bool remove(std::string key);
 
-    void pretty();
+  void pretty();
 };
